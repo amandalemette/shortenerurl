@@ -4,6 +4,23 @@ import qrcode
 import streamlit as st
 from PIL import Image
 from io import BytesIO
+#background-image: url("https://github.com/amandalemette/images/blob/865385d58577f7d8fb5c3bfbfae8692e178e9624/general/foto3.jpg?raw=true");
+
+page_bg_img = """
+<style>
+[data-testid = "stAppViewContainer"]{
+background-image: url("https://github.com/amandalemette/images/blob/main/general/foto7.jpg?raw=true");
+background-size:cover;
+}
+
+[data-testid = 'stHeader']{
+background-color: rgba(0,0,0,0);
+}
+
+<style>
+
+"""
+st.markdown(page_bg_img,unsafe_allow_html = True)
 
 #"st.session_state object:", st.session_state
 if 'button1' not in st.session_state:
